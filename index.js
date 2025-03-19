@@ -11,6 +11,9 @@ let lirik = [
 ];
 $(document).ready(function () {
     $("#button").click(function () {
+        for(let i = 0; i < 8; i++) {
+            baris[i].textContent = "";
+        }
         const audio = $("#lagu")[0];
         setTimeout(() => {
             playLine();
